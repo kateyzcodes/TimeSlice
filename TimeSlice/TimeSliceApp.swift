@@ -25,7 +25,8 @@ struct TimeSliceApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+              TaskListView()
         }
         .modelContainer(sharedModelContainer)
     }

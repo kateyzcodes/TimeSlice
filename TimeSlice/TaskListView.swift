@@ -6,3 +6,36 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct TaskListView: View{
+    @State private var tasks: [Task] = []
+    @State private var newTaskTitle = ""
+    
+    var body: some View {
+        NavigationView {
+            List{
+                Section(header: Text("Add New Task")) {
+                    HStack {
+                        TextField("", text: $newTaskTitle)
+                        Button(action: addTask) {
+                            Image(systemName: "plus.circle.fill").accessibilityLabel("Add new task")
+                        }.disabled(newTaskTitle.isEmpty) // requires a title for each task
+                    }
+                }
+            }
+        }
+    }
+    
+    // adds new task to tasks array that is used to display list of tasks
+    private func addTask() {
+        let newTask = Task(title: newTaskTitle)
+        tasks.append(newTask)
+        newTaskTitle = "" // clears text field for new input
+    }
+    
+    // removes task from tasks array that is used to display list of tasks
+    private func removeTask(at offsets: IndexSet) {
+        tasks.remove(atOffsets: offsets)
+    }
+}
