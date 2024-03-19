@@ -8,43 +8,34 @@
 import Foundation
 import SwiftUI
 
-struct TaskListView: View{
-    @State private var tasks: [Task] = []
+struct TaskListView: View {
+    @StateObject private var viewModel = TaskViewModel()
     @State private var newTaskTitle = ""
     
     var body: some View {
         NavigationView {
-            List{
+            List {
                 Section(header: Text("Add New Task")) {
                     HStack {
-                        TextField("", text: $newTaskTitle)
-                        Button(action: addTask) {
-                            Image(systemName: "plus.circle.fill").accessibilityLabel("Add new task")
-                        }.disabled(newTaskTitle.isEmpty) // requires a title for each task
+                        TextField("Enter task title here", text: $newTaskTitle)
+                        Button("Add Task") {
+                            viewModel.addTask(title: newTaskTitle)
+                            newTaskTitle = "" //clears text field for new input
+                        }
+                        .disabled(newTaskTitle.isEmpty) // requires a title for each task
                     }
                 }
                 
                 Section(header: Text("Your Current Tasks")) {
-                    ForEach(tasks) {
-                        task in NavigationLink(destination: PomodoroTimerView(task: task)){
+                    ForEach(viewModel.tasks) { task in
+                        NavigationLink(destination: PomodoroTimerView(task: task)) {
                             Text(task.title)
                         }.accessibilityLabel("\(task.title), \(task.isComplete ? "Completed" : "Not completed")")
-                    }.onDelete(perform: removeTask)
+                    }
+                    .onDelete(perform: viewModel.removeTask)
                 }
             }
-            .navigationBarTitle("TimeSlice")
+            .navigationBarTitle("TimeSlice Tasks")
         }
-    }
-    
-    // adds new task to tasks array that is used to display list of tasks
-    private func addTask() {
-        let newTask = Task(title: newTaskTitle)
-        tasks.append(newTask)
-        newTaskTitle = "" // clears text field for new input
-    }
-    
-    // removes task from tasks array that is used to display list of tasks
-    private func removeTask(at offsets: IndexSet) {
-        tasks.remove(atOffsets: offsets)
     }
 }

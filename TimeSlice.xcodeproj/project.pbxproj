@@ -19,6 +19,9 @@
 		FFDDDFD92BA9EFBD000BF936 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFD72BA9EFBD000BF936 /* Task.swift */; };
 		FFDDDFDB2BA9F1B4000BF936 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDA2BA9F1B4000BF936 /* TaskListView.swift */; };
 		FFDDDFDD2BA9F1D5000BF936 /* PomodoroTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDC2BA9F1D5000BF936 /* PomodoroTimerView.swift */; };
+		FFDDDFDF2BAA4CBD000BF936 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */; };
+		FFDDDFE02BAA4CBD000BF936 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */; };
+		FFDDDFE22BAA4F59000BF936 /* TaskViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFE12BAA4F59000BF936 /* TaskViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,8 @@
 		FFDDDFD72BA9EFBD000BF936 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		FFDDDFDA2BA9F1B4000BF936 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		FFDDDFDC2BA9F1D5000BF936 /* PomodoroTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerView.swift; sourceTree = "<group>"; };
+		FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		FFDDDFE12BAA4F59000BF936 /* TaskViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,7 @@
 				FFDDDFB32BA8FA45000BF936 /* Preview Content */,
 				FFDDDFD72BA9EFBD000BF936 /* Task.swift */,
 				FFDDDFDA2BA9F1B4000BF936 /* TaskListView.swift */,
+				FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */,
 				FFDDDFDC2BA9F1D5000BF936 /* PomodoroTimerView.swift */,
 			);
 			path = TimeSlice;
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				FFDDDFBE2BA8FA45000BF936 /* TimeSliceTests.swift */,
+				FFDDDFE12BAA4F59000BF936 /* TaskViewModelTests.swift */,
 			);
 			path = TimeSliceTests;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDDDFD82BA9EFBD000BF936 /* Task.swift in Sources */,
+				FFDDDFDF2BAA4CBD000BF936 /* TaskViewModel.swift in Sources */,
 				FFDDDFAE2BA8FA43000BF936 /* ContentView.swift in Sources */,
 				FFDDDFDB2BA9F1B4000BF936 /* TaskListView.swift in Sources */,
 				FFDDDFDD2BA9F1D5000BF936 /* PomodoroTimerView.swift in Sources */,
@@ -284,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDDDFD92BA9EFBD000BF936 /* Task.swift in Sources */,
+				FFDDDFE22BAA4F59000BF936 /* TaskViewModelTests.swift in Sources */,
+				FFDDDFE02BAA4CBD000BF936 /* TaskViewModel.swift in Sources */,
 				FFDDDFBF2BA8FA45000BF936 /* TimeSliceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
