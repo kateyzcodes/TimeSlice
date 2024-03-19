@@ -22,6 +22,7 @@
 		FFDDDFDF2BAA4CBD000BF936 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */; };
 		FFDDDFE02BAA4CBD000BF936 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */; };
 		FFDDDFE22BAA4F59000BF936 /* TaskViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFE12BAA4F59000BF936 /* TaskViewModelTests.swift */; };
+		FFDDDFE42BAA5203000BF936 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFE32BAA5203000BF936 /* TaskTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		FFDDDFDC2BA9F1D5000BF936 /* PomodoroTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerView.swift; sourceTree = "<group>"; };
 		FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		FFDDDFE12BAA4F59000BF936 /* TaskViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModelTests.swift; sourceTree = "<group>"; };
+		FFDDDFE32BAA5203000BF936 /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				FFDDDFBE2BA8FA45000BF936 /* TimeSliceTests.swift */,
+				FFDDDFE32BAA5203000BF936 /* TaskTests.swift */,
 				FFDDDFE12BAA4F59000BF936 /* TaskViewModelTests.swift */,
 			);
 			path = TimeSliceTests;
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDDDFD92BA9EFBD000BF936 /* Task.swift in Sources */,
+				FFDDDFE42BAA5203000BF936 /* TaskTests.swift in Sources */,
 				FFDDDFE22BAA4F59000BF936 /* TaskViewModelTests.swift in Sources */,
 				FFDDDFE02BAA4CBD000BF936 /* TaskViewModel.swift in Sources */,
 				FFDDDFBF2BA8FA45000BF936 /* TimeSliceTests.swift in Sources */,
