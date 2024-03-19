@@ -15,6 +15,10 @@
 		FFDDDFBF2BA8FA45000BF936 /* TimeSliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFBE2BA8FA45000BF936 /* TimeSliceTests.swift */; };
 		FFDDDFC92BA8FA45000BF936 /* TimeSliceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFC82BA8FA45000BF936 /* TimeSliceUITests.swift */; };
 		FFDDDFCB2BA8FA45000BF936 /* TimeSliceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFCA2BA8FA45000BF936 /* TimeSliceUITestsLaunchTests.swift */; };
+		FFDDDFD82BA9EFBD000BF936 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFD72BA9EFBD000BF936 /* Task.swift */; };
+		FFDDDFD92BA9EFBD000BF936 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFD72BA9EFBD000BF936 /* Task.swift */; };
+		FFDDDFDB2BA9F1B4000BF936 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDA2BA9F1B4000BF936 /* TaskListView.swift */; };
+		FFDDDFDD2BA9F1D5000BF936 /* PomodoroTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDC2BA9F1D5000BF936 /* PomodoroTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,9 @@
 		FFDDDFC42BA8FA45000BF936 /* TimeSliceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeSliceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDDDFC82BA8FA45000BF936 /* TimeSliceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSliceUITests.swift; sourceTree = "<group>"; };
 		FFDDDFCA2BA8FA45000BF936 /* TimeSliceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSliceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFDDDFD72BA9EFBD000BF936 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FFDDDFDA2BA9F1B4000BF936 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		FFDDDFDC2BA9F1D5000BF936 /* PomodoroTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,9 @@
 				FFDDDFAF2BA8FA43000BF936 /* Item.swift */,
 				FFDDDFB12BA8FA45000BF936 /* Assets.xcassets */,
 				FFDDDFB32BA8FA45000BF936 /* Preview Content */,
+				FFDDDFD72BA9EFBD000BF936 /* Task.swift */,
+				FFDDDFDA2BA9F1B4000BF936 /* TaskListView.swift */,
+				FFDDDFDC2BA9F1D5000BF936 /* PomodoroTimerView.swift */,
 			);
 			path = TimeSlice;
 			sourceTree = "<group>";
@@ -260,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFDDDFD82BA9EFBD000BF936 /* Task.swift in Sources */,
 				FFDDDFAE2BA8FA43000BF936 /* ContentView.swift in Sources */,
+				FFDDDFDB2BA9F1B4000BF936 /* TaskListView.swift in Sources */,
+				FFDDDFDD2BA9F1D5000BF936 /* PomodoroTimerView.swift in Sources */,
 				FFDDDFB02BA8FA43000BF936 /* Item.swift in Sources */,
 				FFDDDFAC2BA8FA43000BF936 /* TimeSliceApp.swift in Sources */,
 			);
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFDDDFD92BA9EFBD000BF936 /* Task.swift in Sources */,
 				FFDDDFBF2BA8FA45000BF936 /* TimeSliceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
