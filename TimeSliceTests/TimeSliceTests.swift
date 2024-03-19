@@ -33,8 +33,14 @@ final class TimeSliceTests: XCTestCase {
         }
     }
     
-    func testToggleIsComplete() {
+    func testInitializeTask() {
         // Test that the default value of isComplete is false
+        var test_task = Task(title:"Test Task")
+        XCTAssertFalse(test_task.isComplete, "Task should be marked as not complete by default.")
+    }
+    
+    func testToggleIsComplete() {
+        // Create and assert that the initial value of isComplete is false before testing
         var test_task = Task(title:"Test Task")
         XCTAssertFalse(test_task.isComplete, "Task should be marked as not complete by default.")
         

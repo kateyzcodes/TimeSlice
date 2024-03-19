@@ -30,6 +30,4 @@ struct Task:Identifiable {
         isComplete.toggle()
     }
     
-    
-    
 }
