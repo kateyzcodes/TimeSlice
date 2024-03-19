@@ -11,14 +11,18 @@ struct Task:Identifiable {
     var title: String
     var isComplete: Bool
     
-    init(id: UUID, title: String, isComplete: Bool) {
-        self.id = id
+    /*
+     id is uniquely generated on creation of an instance of Task
+     isComplete is false by default (makes no sense to add a completed task)
+    */
+    init(title: String, isComplete: Bool = false) {
+        self.id = UUID()
         self.title = title
         self.isComplete = isComplete
     }
     
     /*
-    method to toggle complete status for a Task
+    Toggle complete status for a Task
     if isComplete == true and isComplete.toggle() -> isComplete == false
     if isComplete == false and isComplete.toggle() -> isComplete == true
     */

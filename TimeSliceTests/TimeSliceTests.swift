@@ -32,5 +32,19 @@ final class TimeSliceTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testToggleIsComplete() {
+        // Test that the default value of isComplete is false
+        var test_task = Task(title:"Test Task")
+        XCTAssertFalse(test_task.isComplete, "Task should be marked as not complete by default.")
+        
+        // Test that toggling isComplete from false to true works
+        test_task.toggleIsComplete()
+        XCTAssertTrue(test_task.isComplete, "Task should be marked as complete after toggling from not complete.")
+        
+        // Test that toggling isComplete from true to false works
+        test_task.toggleIsComplete()
+        XCTAssertFalse(test_task.isComplete, "Task should be marked as not complete after toggling from complete.")
+    }
 
 }
