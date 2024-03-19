@@ -23,6 +23,8 @@
 		FFDDDFE02BAA4CBD000BF936 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */; };
 		FFDDDFE22BAA4F59000BF936 /* TaskViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFE12BAA4F59000BF936 /* TaskViewModelTests.swift */; };
 		FFDDDFE42BAA5203000BF936 /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFE32BAA5203000BF936 /* TaskTests.swift */; };
+		FFDDDFEB2BAA5604000BF936 /* PomodoroTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFEA2BAA5604000BF936 /* PomodoroTimerViewModel.swift */; };
+		FFDDDFEC2BAA5604000BF936 /* PomodoroTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDDDFEA2BAA5604000BF936 /* PomodoroTimerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		FFDDDFE12BAA4F59000BF936 /* TaskViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModelTests.swift; sourceTree = "<group>"; };
 		FFDDDFE32BAA5203000BF936 /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		FFDDDFEA2BAA5604000BF936 /* PomodoroTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,7 @@
 				FFDDDFD72BA9EFBD000BF936 /* Task.swift */,
 				FFDDDFDA2BA9F1B4000BF936 /* TaskListView.swift */,
 				FFDDDFDE2BAA4CBD000BF936 /* TaskViewModel.swift */,
+				FFDDDFEA2BAA5604000BF936 /* PomodoroTimerViewModel.swift */,
 				FFDDDFDC2BA9F1D5000BF936 /* PomodoroTimerView.swift */,
 			);
 			path = TimeSlice;
@@ -283,6 +287,7 @@
 				FFDDDFD82BA9EFBD000BF936 /* Task.swift in Sources */,
 				FFDDDFDF2BAA4CBD000BF936 /* TaskViewModel.swift in Sources */,
 				FFDDDFAE2BA8FA43000BF936 /* ContentView.swift in Sources */,
+				FFDDDFEB2BAA5604000BF936 /* PomodoroTimerViewModel.swift in Sources */,
 				FFDDDFDB2BA9F1B4000BF936 /* TaskListView.swift in Sources */,
 				FFDDDFDD2BA9F1D5000BF936 /* PomodoroTimerView.swift in Sources */,
 				FFDDDFB02BA8FA43000BF936 /* Item.swift in Sources */,
@@ -297,6 +302,7 @@
 				FFDDDFD92BA9EFBD000BF936 /* Task.swift in Sources */,
 				FFDDDFE42BAA5203000BF936 /* TaskTests.swift in Sources */,
 				FFDDDFE22BAA4F59000BF936 /* TaskViewModelTests.swift in Sources */,
+				FFDDDFEC2BAA5604000BF936 /* PomodoroTimerViewModel.swift in Sources */,
 				FFDDDFE02BAA4CBD000BF936 /* TaskViewModel.swift in Sources */,
 				FFDDDFBF2BA8FA45000BF936 /* TimeSliceTests.swift in Sources */,
 			);
