@@ -24,14 +24,15 @@ struct TaskListView: View{
                     }
                 }
                 
-                Section(header: Text("Your Tasks")) {
+                Section(header: Text("Your Current Tasks")) {
                     ForEach(tasks) {
                         task in NavigationLink(destination: PomodoroTimerView(task: task)){
                             Text(task.title)
-                        }
+                        }.accessibilityLabel("\(task.title), \(task.isComplete ? "Completed" : "Not completed")")
                     }.onDelete(perform: removeTask)
                 }
-            }.navigationBarTitle("TimeSlice")
+            }
+            .navigationBarTitle("TimeSlice")
         }
     }
     
