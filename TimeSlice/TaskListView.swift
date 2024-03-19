@@ -23,7 +23,15 @@ struct TaskListView: View{
                         }.disabled(newTaskTitle.isEmpty) // requires a title for each task
                     }
                 }
-            }
+                
+                Section(header: Text("Your Tasks")) {
+                    ForEach(tasks) {
+                        task in NavigationLink(destination: PomodoroTimerView(task: task)){
+                            Text(task.title)
+                        }
+                    }.onDelete(perform: removeTask)
+                }
+            }.navigationBarTitle("TimeSlice")
         }
     }
     

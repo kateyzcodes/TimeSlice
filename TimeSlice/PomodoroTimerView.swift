@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct PomodoroTimerView: View {
+    var task: Task
+
+    var body: some View {
+        Text("Timer for \(task.title)")
+    }
+}
