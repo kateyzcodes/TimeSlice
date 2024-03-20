@@ -9,11 +9,9 @@ import Foundation
 import SwiftUI
 
 struct PomodoroTimerView: View {
-//    var task: Task
     @ObservedObject var viewModel: PomodoroTimerViewModel
 
     var body: some View {
-//        Text("Timer for \(task.title)")
         VStack {
             Text("Time for \(viewModel.onBreak ? "a well-deserved break" : "work")!").font(.title)
 
@@ -30,6 +28,10 @@ struct PomodoroTimerView: View {
             Button("Reset") {
                 viewModel.resetTimer()
             }.padding()
+        }
+        // Resets timer each time user navigates back to task list screen
+        .onAppear {
+            viewModel.resetTimer()
         }
         // Alerts user when onBreak is toggled, depending on state of onBreak
         .alert(isPresented: $viewModel.showAlert) {

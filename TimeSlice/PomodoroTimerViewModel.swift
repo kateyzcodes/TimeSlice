@@ -2,7 +2,7 @@
 //  PomodoroTimerViewModel.swift
 //  TimeSlice
 //
-//  Created by Katelyn Zheng on 3/19/24.
+//  Created by Katelyn Zheng on 3/18/24.
 //
 
 import Foundation
@@ -24,9 +24,9 @@ class PomodoroTimerViewModel: ObservableObject {
     
     init(task: Task) {
         // Initializes times with default times for Pomodoro
-        self.workTime = 0.5*60
-        self.breakTime = 0.5*60
-        self.remainingTime = 0.5*60
+        self.workTime = 0.1*60
+        self.breakTime = 0.1*60
+        self.remainingTime = 0.1*60
 
         // Sets up the timer
         self.timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -36,12 +36,12 @@ class PomodoroTimerViewModel: ObservableObject {
     private func setupTimer() {
         timer.sink {
             [weak self] _ in
-                guard let self = self else { return } // does nothing if self cannot be unwrapped safely
-                    guard self.isActive else { return } // does nothing if timer is not active
+                guard let self = self else { return } // Does nothing if self cannot be unwrapped safely
+                    guard self.isActive else { return } // Does nothing if timer is not active
                     if self.remainingTime > 0 {
                         self.remainingTime -= 1
                     } 
-                    else { //handles timer when it completes a cycle
+                    else { // Handles timer when it completes a cycle
                         self.isActive = false
                         self.onBreak.toggle()
                         self.remainingTime = self.onBreak ? self.breakTime : self.workTime
