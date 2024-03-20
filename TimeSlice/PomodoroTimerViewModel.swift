@@ -24,9 +24,9 @@ class PomodoroTimerViewModel: ObservableObject {
     
     init(task: Task) {
         // Initializes times with default times for Pomodoro
-        self.workTime = 0.1*60
-        self.breakTime = 0.1*60
-        self.remainingTime = 0.1*60
+        self.workTime = 25*60
+        self.breakTime = 5*60
+        self.remainingTime = 25*60 // Starts out equal to workTime
 
         // Sets up the timer
         self.timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
