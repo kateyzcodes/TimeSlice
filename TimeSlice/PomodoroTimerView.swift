@@ -15,7 +15,7 @@ struct PomodoroTimerView: View {
     var body: some View {
 //        Text("Timer for \(task.title)")
         VStack {
-            Text("Time for \(viewModel.onBreak ? "on break" : "work time")!").font(.title)
+            Text("Time for \(viewModel.onBreak ? "a well-deserved break" : "work")!").font(.title)
 
             Text(formatTime(viewModel.remainingTime)).font(.largeTitle)
 
